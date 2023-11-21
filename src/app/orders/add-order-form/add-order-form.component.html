@@ -1,0 +1,36 @@
+<div class="center-wrapper">
+  <form [formGroup]="orderForm" (ngSubmit)="addNewOrder()">
+    
+    <div>
+      <mat-form-field>
+        <mat-label>Customer Name</mat-label>
+        <input matInput [errorStateMatcher]="customErrorStateMarcher" formControlName="customerName" placeholder="Customer Name/Table Name, max 12 characters">
+        <mat-error *ngIf="orderForm.controls['customerName']?.hasError('required')">
+          This field is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field>
+        <mat-label>Choose dishes</mat-label>
+        <mat-select multiple [errorStateMatcher]="customErrorStateMarcher" formControlName="chooseDishes" placeholder="Choose dishes or drinks">
+          <mat-option *ngFor="let dish of dishess" [value]="dish">{{dish}}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="orderForm.get('chooseDishes')?.hasError('required')">
+          This field is required.
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field class="">
+      <mat-label>Add comment</mat-label>
+      <textarea matInput formControlName="comment" placeholder="Add comment or clarify description"></textarea>
+    </mat-form-field>
+
+    <div class="center-container">
+      <button class=""mat-raised-button type="submit" [disabled]="orderForm.invalid">Add order</button>
+    </div>
+    
+  </form>
+</div>

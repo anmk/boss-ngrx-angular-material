@@ -1,0 +1,18 @@
+mat-toolbar {
+  height: 70px;
+}
+
+button {
+  margin: 2px;
+}
+
+.toolbar-title {
+  flex: 1 1 0%;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 579px) {
+  .toolbar-title {
+    display: none;
+  }
+}

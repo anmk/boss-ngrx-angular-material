@@ -1,0 +1,22 @@
+.top {
+  margin-top: 24px;
+}
+
+.bottom {
+  margin-bottom: 88px;
+}
+
+.button {
+  width: 180px;
+}
+
+.set-divider {
+  width: 50%;
+  margin: 24px auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .set-divider {
+    width: 100%;
+  }
+}

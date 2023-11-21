@@ -1,0 +1,14 @@
+
+<div class="center-wrapper">
+    <div *ngIf="orders.length > 0">
+      <ng-container *ngFor="let order of orders; index as i">
+        <app-order-details 
+          [order]="order" 
+          [i]="i"
+          (delete)="deleteOrder(order.id)" 
+          (changeDelivery)="changeDeliveryStatus($event)" 
+          (changePayment)="changePaymentStatus($event)"
+        ></app-order-details>
+      </ng-container>
+    </div>
+</div>

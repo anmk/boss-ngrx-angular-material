@@ -1,0 +1,71 @@
+<div class="order-details-container">
+  <div class="wrapper">
+
+    <mat-accordion class="">
+      <mat-expansion-panel  (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="">
+        <mat-expansion-panel-header class="">
+
+          <mat-panel-title class="">
+            <span class="expand">{{ i + 1 }}</span>
+            <mat-icon class="expand order-space" color="accent">person</mat-icon>
+            <div class="name order-item">{{ order.customerName | firstLetterUppercase }}</div>
+          </mat-panel-title>
+
+          <mat-panel-description>
+            <button mat-button class="expand" color="{{panelOpenState ? 'primary' : 'accent'}}">
+              {{ panelOpenState ? 'collapse' : 'expand' }}
+            </button>
+            <section class="">
+              <mat-slide-toggle class="pay" [checked]="order.paid" (change)="changePaymentStatus()">
+                {{ order.paid ? 'Paid' : 'To pay' }}
+              </mat-slide-toggle>
+            </section>
+            <section class="">
+              <mat-slide-toggle [checked]="order.delivered" (change)="changeDeliveryStatus()">
+                <span class="delivery">{{ order.delivered ? 'Delivered' : 'Preparing' }}</span>
+              </mat-slide-toggle>
+            </section>
+            <section class="">
+              <button mat-icon-button stopPropagation aria-label="Delete order" (click)="deleteOrder()">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </section>
+          </mat-panel-description>
+
+        </mat-expansion-panel-header>
+
+        <div class='row'>
+
+          <div class='column'>
+            <div class='column-dishes' *ngIf="order.chooseDishes.length > 0">
+
+              <div *ngIf="order.chooseDishes.length == 1; else pluralBlock">
+                <p class="column-title">Dish:</p>
+              </div>
+              <ng-template #pluralBlock>
+                <p class="column-title">Dishes:</p>
+              </ng-template>
+
+              <ul class="">
+                <ng-container *ngFor="let dish of order.chooseDishes; index as i">
+                  <li>{{ dish }}</li>
+                </ng-container>
+              </ul>
+
+            </div>
+          </div>
+        
+          <div class='column'>
+            <div class='column-comment' *ngIf="order?.comment">
+              <p class="column-title">Comment:</p>
+              <span>{{ order.comment }}</span>
+            </div>
+          </div>
+
+      </div>
+        
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="top">
+  <app-add-order-form (addOrder)="addOrder($event)"></app-add-order-form>
+</div>
+
+<mat-divider class="set-divider"></mat-divider>
+
+<div class="center-container">
+  <button mat-raised-button color="{{orderList ? 'accent' : 'primary'}}" class="button" (click)="toggleOrderList()">{{ orderList ? 'Show active orders' : 'Show all orders' }}</button>
+</div>
+
+<div class="center-container top">
+  <button mat-flat-button matBadgeColor="primary" matBadge="{{orders.length}}" [matBadgeHidden]="badgeHidden" matBadgePosition="before" (click)="toggleBadgeVisibility()"><mat-icon>checklist_rtl</mat-icon>Orders:</button>
+</div>
+
+<div class="top">
+  <app-order-list [orders]="orders" (delete)="deleteOrder($event)" (changeDelivery)="changeDeliveryStatus($event)" (changePayment)="changePaymentStatus($event)"></app-order-list>
+</div>
+
+<div class="center-container top">
+  <button mat-raised-button color="{{orders.length ? 'accent' : 'primary'}}" class="button bottom" aria-label="Delete all orders" (click)="deleteAllOrder()">{{ orders.length ? 'Delete all orders' : 'Currently no orders' }}</button>
+</div>
