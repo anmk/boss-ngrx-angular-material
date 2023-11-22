@@ -26,7 +26,6 @@ export class OrderBasicComponent implements OnInit, OnDestroy {
   private selectListOrders(): void {
     this.mainSubscription = this.store.select(selectListOrders).subscribe({
       next: (orders) => {
-        console.log('all orders: ', orders);
         this.orders = [...orders];
       }
     });
@@ -35,7 +34,6 @@ export class OrderBasicComponent implements OnInit, OnDestroy {
   private selectListActiveOrders(): void {
     this.childSubscription = this.store.select(selectListActiveOrders).subscribe({
       next: (orders) => {
-        console.log('not delivered orders: ', orders);
         this.orders = [...orders];
       }
     });
