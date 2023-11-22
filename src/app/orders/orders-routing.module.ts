@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { OrderBasicComponent } from './order-basic/order-basic.component';
 
 const routes: Routes = [
-  { path: 'order-list', component: OrderBasicComponent, pathMatch: 'full'},
+  { path: 'orders', component: OrderBasicComponent, pathMatch: 'full'},
 ];
 
   @NgModule({
