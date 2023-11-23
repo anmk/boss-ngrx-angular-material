@@ -22,7 +22,7 @@ export class OrderComponent implements OnDestroy {
   panelOpenState = false;
 
   deleteOrder(): void {
-    this.subscription = this.dialogService.openConfirmDialog('Are you sure to delete this order?')
+    this.subscription = this.dialogService.openConfirmDialog(`Are you sure you want to delete the order for the customer: ${this.order.customerName}?`)
     .afterClosed().subscribe(resp => {
       if(resp){
         this.delete.emit();
