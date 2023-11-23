@@ -13,8 +13,4 @@ export class MatConfirmDialogComponent {
     public dialogRef: MatDialogRef<MatConfirmDialogComponent>
   ) { }
 
-  closeDialog(): void {
-    this.dialogRef.close(false);
-  }
-
 }
