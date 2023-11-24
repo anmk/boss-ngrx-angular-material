@@ -13,8 +13,7 @@
 
     <div>
       <mat-form-field>
-        <mat-label>Choose dishes</mat-label>
-        <mat-select multiple [errorStateMatcher]="customErrorStateMarcher" formControlName="chooseDishes" placeholder="Choose dishes or drinks">
+        <mat-select multiple [errorStateMatcher]="customErrorStateMarcher" formControlName="chooseDishes" placeholder="Choose dishes or drinks*">
           <mat-option *ngFor="let dish of dishess" [value]="dish">{{dish}}</mat-option>
         </mat-select>
         <mat-error *ngIf="orderForm.get('chooseDishes')?.hasError('required')">
