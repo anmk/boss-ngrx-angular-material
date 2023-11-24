@@ -33,6 +33,7 @@ BOSS uses the following open source projects for proper operation:
 
 ## Some screenshots from the app:
 ### :computer: Desktop:
+**Some views from the desktop.** 
 :point_right: *Home page view.* :point_down:
 
 ![boss01](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/a011e3a8-914e-488e-b291-32c3deaa9e7b)
@@ -61,7 +62,7 @@ BOSS uses the following open source projects for proper operation:
 
 ![boss07](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/f2879ede-6c15-4b98-9176-b43e1cc47232)
 
-:point_right: *Deleting a completed order.* :point_down:
+:point_right: *Deleting William's completed  order.* :point_down:
 
 ![boss08](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/05aa0eb8-749c-4f89-ad09-835a5f542b53)
 
@@ -78,7 +79,7 @@ BOSS uses the following open source projects for proper operation:
 ![boss11](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/4a49757a-8827-4bf5-8e08-7b8ce3b1e5b7)
 
 ### :iphone: Mobile devices:
-:point_right: *A few scrinshots from your smartphone.* :point_down:
+**A few scrinshots from your smartphone.**
 
 ![boss01mob](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/67d214c7-1bad-424e-98a0-73ea097b9ed0)
 
