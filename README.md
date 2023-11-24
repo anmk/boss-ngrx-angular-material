@@ -32,8 +32,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 BOSS uses the following open source projects for proper operation:
 * [Angular](https://github.com/angular/angular)
 * [Angular CLI](https://github.com/angular/angular-cli)
-* [NgRx store](https://ngrx.io/guide/store)
 * [Angular Material](https://material.angular.io)
+* [NgRx store](https://ngrx.io/guide/store)
 * [TypeScript](https://github.com/microsoft/TypeScript)
 * [node.js](https://nodejs.org/en/)
 
