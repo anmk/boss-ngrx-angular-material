@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
+The application is available at the following addresses:
+
+* https://bar-order-support-system.web.app/
+
+* https://bar-order-support-system.firebaseapp.com/
+
 ## Introduction
 
 BOSS (Bar Order Support System) is used to place and save orders in bars or pubs. You can mark that the order has been delivered and that it has been paid for. Allows you to filter active orders. After the order has been completed and paid for, or at any other time, it can be deleted. 
@@ -34,6 +40,7 @@ BOSS uses the following open source projects for proper operation:
 ## Some screenshots from the app:
 ### :computer: Desktop:
 **Some views from the desktop.** 
+
 :point_right: *Home page view.* :point_down:
 
 ![boss01](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/a011e3a8-914e-488e-b291-32c3deaa9e7b)
