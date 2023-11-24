@@ -86,7 +86,7 @@ BOSS uses the following open source projects for proper operation:
 ![boss11](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/4a49757a-8827-4bf5-8e08-7b8ce3b1e5b7)
 
 ### :iphone: Mobile devices:
-**A few scrinshots from your smartphone.**
+**A few screenshots from your smartphone.**
 
 ![boss01mob](https://github.com/anmk/boss-ngrx-angular-material/assets/5839775/67d214c7-1bad-424e-98a0-73ea097b9ed0)
 
