@@ -1,6 +1,8 @@
 # Bar Order Support System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+This project uses ![Angular](https://img.shields.io/badge/Angular-DD0031?style=plastic&logo=angular&logoColor=white) It was generated with [Angular CLI](https://github.com/angular/angular-cli)
+
+![version](https://img.shields.io/badge/angular%20cli%20version-16.2.6-blue?style=plastic) 
 
 The application is available at the following addresses:
 
